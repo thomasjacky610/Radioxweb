@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="RadioX — your guide to satellite radio. Learn how it works, what channels are available, pricing plans, and which devices are compatible."/>
+  <title>RadioX — Satellite Radio Guide</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .hero {
+      padding: 72px 0 64px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+    }
+    .hero-text h1 { font-size: 2.4rem; margin-bottom: 16px; }
+    .hero-text p  { font-size: 1.05rem; color: #444; margin-bottom: 24px; }
+    .hero-btns    { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn-primary {
+      padding: 11px 24px;
+      background: #1a56a8;
+      color: #fff;
+      border-radius: 5px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-primary:hover { background: #0e3a7a; color: #fff; text-decoration: none; }
+    .btn-secondary {
+      padding: 11px 24px;
+      border: 1px solid #ccc;
+      color: #333;
+      border-radius: 5px;
+      font-family: system-ui, sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .btn-secondary:hover { border-color: #999; color: #111; text-decoration: none; }
+    .hero-img img { border-radius: 10px; width: 100%; object-fit: cover; max-height: 400px; }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .stat {
+      padding: 28px 20px;
+      text-align: center;
+      border-right: 1px solid #e0e0e0;
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: system-ui, sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #1a56a8;
+      display: block;
+      letter-spacing: -0.03em;
+      line-height: 1;
+    }
+    .stat-lbl {
+      font-family: system-ui, sans-serif;
+      font-size: 0.8rem;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .intro-text h2 { margin-bottom: 16px; }
+    .intro-text p  { font-size: 0.98rem; color: #444; margin-bottom: 14px; }
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-img   { order: -1; }
+      .stats-row  { grid-template-columns: 1fr 1fr; }
+      .stat:nth-child(2) { border-right: none; }
+      .stat:nth-child(3) { border-top: 1px solid #e0e0e0; }
+    }
+    @media (max-width: 540px) {
+      .stats-row  { grid-template-columns: 1fr 1fr; }
+      .hero-text h1 { font-size: 1.9rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">Radio<span>X</span></a>
+    <ul class="nav-menu" id="nm">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="channels.html">Channels</a></li>
+      <li><a href="plans.html">Plans & Pricing</a></li>
+      <li><a href="devices.html">Devices</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="plans.html" class="nav-btn">View Plans</a>
+    <button class="burger" onclick="document.getElementById('nm').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Satellite Radio, Explained Simply</h1>
+        <p>Hundreds of channels. No signal fade. No ads on music. Whether you're on a long road trip or just commuting, satellite radio gives you more to listen to — wherever you are in the country.</p>
+        <div class="hero-btns">
+          <a href="how-it-works.html" class="btn-primary">How It Works</a>
+          <a href="plans.html" class="btn-secondary">See Plans & Pricing</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="1.jpg" alt="Satellite radio receiver in a car dashboard"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AD SLOT -->
+<div class="ad-slot">Advertisement</div>
+
+<!-- STATS -->
+<section class="section-alt" style="padding: 48px 0;">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat"><span class="stat-num">150+</span><span class="stat-lbl">Channels available</span></div>
+      <div class="stat"><span class="stat-num">40M+</span><span class="stat-lbl">Active subscribers</span></div>
+      <div class="stat"><span class="stat-num">0</span><span class="stat-lbl">Ads on music channels</span></div>
+      <div class="stat"><span class="stat-num">24/7</span><span class="stat-lbl">Live programming</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS IT -->
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div class="intro-text">
+        <h2>What Is Satellite Radio, Exactly?</h2>
+        <p>Satellite radio is a subscription-based audio service that broadcasts directly from satellites orbiting the Earth. Unlike standard FM stations that only reach a few dozen miles, a satellite signal covers the entire country — meaning you hear the same channel in rural Montana as you do downtown Chicago.</p>
+        <p>The service launched commercially in 2001 and has grown steadily since. Today it's built into most new vehicles and can also be streamed on phones, computers, and home audio devices through a dedicated app.</p>
+        <p>The big selling point, aside from nationwide coverage, is the variety. Local radio markets might give you 20 or 30 stations. Satellite radio gives you over 150, covering genres and formats that would never get airtime on a local station. And most music channels are completely free of commercials — you get the full hour, not 18 minutes of it.</p>
+        <div class="info-box">
+          <strong>Worth noting:</strong> Satellite radio requires a paid subscription, but most new vehicles come with a free trial period so you can try it before committing.
+        </div>
+      </div>
+      <div>
+        <div class="img-block">
+          <img src="2.jpg" alt="Person listening to satellite radio in a car"/>
+          <p class="img-caption">Satellite radio works in the car, at home, and on your phone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">Advertisement</div>
+
+<!-- WHAT YOU GET -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <h2>What You Actually Get</h2>
+      <p class="section-sub">Here is a quick look at the main categories of content available on satellite radio.</p>
+    </div>
+    <div class="three-col">
+      <div class="card">
+        <div class="icon">🎵</div>
+        <h3>Music Without Ads</h3>
+        <p>Dozens of channels dedicated to specific genres and eras — all commercial-free. You'll find dedicated stations for rock, country, pop, hip-hop, jazz, classical, Latin, blues, and plenty more.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏈</div>
+        <h3>Live Sports</h3>
+        <p>Every game from the major professional sports leagues, plus college sports and auto racing. Home and away broadcasts are both available, so you never miss your team's local commentary.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📰</div>
+        <h3>News Around the Clock</h3>
+        <p>Major national and international news networks broadcast live 24 hours a day. Whether you want straight news, political talk, or business coverage, there's a channel running it continuously.</p>
+      </div>
+      <div class="card">
+        <div class="icon">😂</div>
+        <h3>Comedy</h3>
+        <p>Stand-up specials from classic and contemporary comedians, comedy talk shows, and variety programming. Great for long drives when you want something lighter than music.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎙</div>
+        <h3>Exclusive Talk Shows</h3>
+        <p>Celebrity-hosted programs and exclusive interview formats that aren't available anywhere on regular radio. Some of satellite radio's most popular channels are in this category.</p>
+      </div>
+      <div class="card">
+        <div class="icon">👨‍👩‍👧</div>
+        <h3>Family Programming</h3>
+        <p>Kids' music, stories, and educational content that's appropriate for all ages. Genuinely useful for road trips with children when everyone needs to agree on something.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE FEATURE -->
+<section class="section">
+  <div class="container">
+    <div class="two-col">
+      <div class="img-block">
+        <img src="3.jpg" alt="Satellite dish receiving signal from space"/>
+        <p class="img-caption">The signal travels from broadcast studios up to satellites and back down to your receiver.</p>
+      </div>
+      <div>
+        <h2>Why People Switch to Satellite Radio</h2>
+        <p>The most common reason is road trips. FM radio is frustrating on long drives — you're constantly rescanning as the signal fades and searching for a decent station in unfamiliar territory. With satellite radio, your station follows you the entire way.</p>
+        <p>The second reason is sports. If your team isn't local to where you live, getting live game coverage on regular radio is essentially impossible. Satellite radio solves that completely — every game, every team, home and away broadcasts included.</p>
+        <p>And for people who just want music without constant advertising interruptions, the commercial-free channels are the obvious draw. It's a straightforward improvement over what you get for free.</p>
+        <a href="how-it-works.html" style="font-family:system-ui,sans-serif; font-size:0.9rem; font-weight:600;">Read more about how it works →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="ad-slot">Advertisement</div>
+
+<!-- QUICK PLAN PREVIEW -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Plans Start at $9.99 a Month</h2>
+      <p class="section-sub">There are a few different tiers depending on whether you want in-car satellite reception, streaming only, or the full package with every channel available.</p>
+    </div>
+    <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:18px; margin-bottom:18px;">
+      <div class="card" style="border-top: 3px solid #1a56a8;">
+        <h3 style="font-family:system-ui,sans-serif;">Streaming</h3>
+        <p style="font-size:1.6rem; font-weight:800; color:#111; font-family:system-ui,sans-serif; margin:8px 0 4px;">$9.99<span style="font-size:0.85rem; font-weight:400; color:#777;">/mo</span></p>
+        <p>App and web streaming. No car hardware needed.</p>
+      </div>
+      <div class="card" style="border-top: 3px solid #1a56a8; background:#1a56a8;">
+        <h3 style="font-family:system-ui,sans-serif; color:#fff;">Standard</h3>
+        <p style="font-size:1.6rem; font-weight:800; color:#fff; font-family:system-ui,sans-serif; margin:8px 0 4px;">$17.99<span style="font-size:0.85rem; font-weight:400; opacity:0.8;">/mo</span></p>
+        <p style="color:rgba(255,255,255,0.8);">In-car satellite + streaming. Most popular plan.</p>
+      </div>
+      <div class="card" style="border-top: 3px solid #1a56a8;">
+        <h3 style="font-family:system-ui,sans-serif;">Platinum</h3>
+        <p style="font-size:1.6rem; font-weight:800; color:#111; font-family:system-ui,sans-serif; margin:8px 0 4px;">$22.99<span style="font-size:0.85rem; font-weight:400; color:#777;">/mo</span></p>
+        <p>Everything included — all channels on all devices.</p>
+      </div>
+      <div class="card" style="border-top: 3px solid #1a56a8;">
+        <h3 style="font-family:system-ui,sans-serif;">Family</h3>
+        <p style="font-size:1.6rem; font-weight:800; color:#111; font-family:system-ui,sans-serif; margin:8px 0 4px;">$26.99<span style="font-size:0.85rem; font-weight:400; color:#777;">/mo</span></p>
+        <p>Up to 4 simultaneous streams. Best for households.</p>
+      </div>
+    </div>
+    <p style="text-align:center; font-family:system-ui,sans-serif; font-size:0.82rem; color:#888;">Prices are approximate and subject to change. <a href="plans.html">See full plan details →</a></p>
+  </div>
+</section>
+
+<!-- LINKS TO OTHER PAGES -->
+<section class="section">
+  <div class="container">
+    <h2 style="margin-bottom:28px;">Explore the Guide</h2>
+    <div class="four-col">
+      <a href="how-it-works.html" style="display:block; padding:22px; border:1px solid #e0e0e0; border-radius:8px; text-decoration:none; color:#111; transition:border-color 0.15s;">
+        <div style="font-size:1.4rem; margin-bottom:10px;">🛰</div>
+        <strong style="font-family:system-ui,sans-serif; display:block; margin-bottom:5px;">How It Works</strong>
+        <span style="font-size:0.85rem; color:#666; font-family:system-ui,sans-serif;">How the satellite signal gets from space to your speakers.</span>
+      </a>
+      <a href="channels.html" style="display:block; padding:22px; border:1px solid #e0e0e0; border-radius:8px; text-decoration:none; color:#111; transition:border-color 0.15s;">
+        <div style="font-size:1.4rem; margin-bottom:10px;">📻</div>
+        <strong style="font-family:system-ui,sans-serif; display:block; margin-bottom:5px;">Channel Guide</strong>
+        <span style="font-size:0.85rem; color:#666; font-family:system-ui,sans-serif;">What genres and formats are available and how they're organised.</span>
+      </a>
+      <a href="plans.html" style="display:block; padding:22px; border:1px solid #e0e0e0; border-radius:8px; text-decoration:none; color:#111; transition:border-color 0.15s;">
+        <div style="font-size:1.4rem; margin-bottom:10px;">💳</div>
+        <strong style="font-family:system-ui,sans-serif; display:block; margin-bottom:5px;">Plans & Pricing</strong>
+        <span style="font-size:0.85rem; color:#666; font-family:system-ui,sans-serif;">A breakdown of subscription options and what each one includes.</span>
+      </a>
+      <a href="devices.html" style="display:block; padding:22px; border:1px solid #e0e0e0; border-radius:8px; text-decoration:none; color:#111; transition:border-color 0.15s;">
+        <div style="font-size:1.4rem; margin-bottom:10px;">📱</div>
+        <strong style="font-family:system-ui,sans-serif; display:block; margin-bottom:5px;">Devices</strong>
+        <span style="font-size:0.85rem; color:#666; font-family:system-ui,sans-serif;">Where and how you can listen — car, home, phone, and more.</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Radio<span>X</span></div>
+        <p>An independent guide to satellite radio. We are not affiliated with any satellite radio provider or related company.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Guide</h4>
+        <ul>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="channels.html">Channels</a></li>
+          <li><a href="plans.html">Plans & Pricing</a></li>
+          <li><a href="devices.html">Devices</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> RadioX. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy</a> &nbsp;|&nbsp; <a href="terms.html">Terms</a> &nbsp;|&nbsp; <a href="disclaimer.html">Disclaimer</a></p>
+      <p style="margin-top:6px;">This website is an independent informational resource and is not affiliated with, endorsed by, or sponsored by any satellite radio provider. All prices shown are approximate and subject to change.</p>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
